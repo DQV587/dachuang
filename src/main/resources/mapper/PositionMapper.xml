@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dq.mapper.PositionMapper">
+    <update id="makeTrue">
+        update position set has_good=true where position_id=#{position_id}
+    </update>
+    <update id="makeFalse">
+        update position set has_good=false where position_id=#{position_id}
+    </update>
+    <select id="findAvailablePosition" resultType="com.dq.domain.Position">
+        select * from position where has_good=false limit 1
+    </select>
+    <select id="findById" resultType="com.dq.domain.Position">
+        select * from position where position_id=${position_id}
+    </select>
+</mapper>
