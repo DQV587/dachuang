@@ -1,6 +1,8 @@
 package com.dq.controller;
 
 import com.dq.domain.Item;
+import com.dq.domain.Result;
+import com.dq.exceptions.ItemNotFoundException;
 import com.dq.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -19,15 +21,16 @@ public class ItemController {
     private ItemService itemService;
 
     @RequestMapping(value = "/insert",method = RequestMethod.POST)
-    public void insertItem(@RequestParam("owner_id")int owner_id,@RequestParam("good_name")String good_name){
+    public Result insertItem(@RequestParam("owner_id")int owner_id,@RequestParam("good_name")String good_name){
         itemService.insertItem(owner_id,good_name);
+        return new Result(true,200,null,null);
     }
     @RequestMapping(value="/findByOwnerId",method = RequestMethod.POST)
-    public List<Item> findByOwnerId(@RequestParam("owner_id")int owner_id){
-        return itemService.findByOwnerId(owner_id);
+    public Result findByOwnerId(@RequestParam("owner_id")int owner_id){
+        return new Result<>(true,200,null,itemService.findByOwnerId(owner_id));
     }
     @RequestMapping(value="/getItem",method = RequestMethod.POST)
-    public void getItem(@RequestParam("item_id")int item_id){
-        itemService.getItem(item_id);
+    public Result getItem(@RequestParam("item_id")int item_id) throws ItemNotFoundException {
+        return new Result<>(true,200,null,itemService.getItem(item_id));
     }
 }

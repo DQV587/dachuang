@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository
 public interface ManagerMapper {
-    public Manager selectManager(String name);
+    public Manager findManager(String name);
 }

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 @Mapper
 
 public interface UserMapper {
-    public User findUser(String wx_id);
+    public User findUser(String username);
     public void insertUser(User user);
 }
 

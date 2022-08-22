@@ -6,6 +6,6 @@
     </insert>
 
     <select id="findUser" resultType="com.dq.domain.User">
-        select * from user where wx_id=#{wx_id}
+        select * from user where username=#{username}
     </select>
 </mapper>
