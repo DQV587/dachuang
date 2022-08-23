@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df355963-3289-4d66-b502-2d4d3effce7d" name="变更" comment="大致搭好了框架">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/exceptions/ItemNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/exceptions/managerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/exceptions/passwordIncorrectException.java" afterDir="false" />
+    <list default="true" id="df355963-3289-4d66-b502-2d4d3effce7d" name="变更" comment="写了个差不多？">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/exceptions/userRegisteredException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/controller/ManagerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/domain/ResponseAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/ResponseAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/domain/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/RestExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/mapper/ManagerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/mapper/ManagerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/service/ManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/service/ManagerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ManagerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ManagerMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dq/mapper/ManagerMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dq/mapper/ManagerMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +201,9 @@
       <workItem from="1660573774507" duration="12019000" />
       <workItem from="1660795041124" duration="19900000" />
       <workItem from="1660983534993" duration="8565000" />
-      <workItem from="1661159155079" duration="9499000" />
+      <workItem from="1661159155079" duration="9546000" />
+      <workItem from="1661172906018" duration="249000" />
+      <workItem from="1661267270323" duration="1805000" />
     </task>
     <task id="LOCAL-00001" summary="大致搭好了框架">
       <created>1661006951884</created>
@@ -220,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661006951884</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="写了个差不多？">
+      <created>1661172202779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661172202779</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +238,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="大致搭好了框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="大致搭好了框架" />
+    <MESSAGE value="写了个差不多？" />
+    <option name="LAST_COMMIT_MESSAGE" value="写了个差不多？" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

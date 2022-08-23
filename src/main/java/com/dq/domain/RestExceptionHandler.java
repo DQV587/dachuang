@@ -3,6 +3,7 @@ package com.dq.domain;
 import com.dq.exceptions.ItemNotFoundException;
 import com.dq.exceptions.UserNotFoundException;
 import com.dq.exceptions.passwordIncorrectException;
+import com.dq.exceptions.userRegisteredException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -30,6 +31,11 @@ public class RestExceptionHandler {
     public Result<Object> passwordIncorrectException(Exception e){
         log.error("全局异常信息 ex={}",e.getMessage(),e );
         return Result.fail(502,e.getMessage());
+    }
+    @ExceptionHandler(userRegisteredException.class)
+    public Result<Object> userRegisteredException(Exception e){
+        log.error("全局异常信息 ex={}",e.getMessage(),e );
+        return Result.fail(503,e.getMessage());
     }
     @ExceptionHandler(Exception.class)
     public Result<String> Exception(Exception e){

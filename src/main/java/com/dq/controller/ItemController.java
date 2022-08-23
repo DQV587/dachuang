@@ -33,4 +33,8 @@ public class ItemController {
     public Result getItem(@RequestParam("item_id")int item_id) throws ItemNotFoundException {
         return new Result<>(true,200,null,itemService.getItem(item_id));
     }
+    @RequestMapping(value="/getAll",method = RequestMethod.POST)
+    public Result getItem()  {
+        return new Result<>(true,200,null,itemService.findAll());
+    }
 }

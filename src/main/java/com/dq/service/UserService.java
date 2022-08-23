@@ -12,9 +12,9 @@ public class UserService {
     UserMapper userMapper;
     public User findUser(String username) throws UserNotFoundException {
         User user=userMapper.findUser(username);
-        if(user==null){
-            throw new UserNotFoundException(username+":用户不存在");
-        }
         return user;
+    }
+    public void insertUser(String username,String password){
+        userMapper.insertUser(new User(0,username,null,password));
     }
 }
