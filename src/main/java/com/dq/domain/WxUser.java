@@ -7,9 +7,5 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
-    private int user_id;
-    private String username;
-    private String openid;
-    private String password;
+public class WxUser {
 }

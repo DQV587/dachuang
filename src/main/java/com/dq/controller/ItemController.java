@@ -1,17 +1,13 @@
 package com.dq.controller;
 
-import com.dq.domain.Item;
 import com.dq.domain.Result;
 import com.dq.exceptions.ItemNotFoundException;
 import com.dq.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/Item")
@@ -33,8 +29,8 @@ public class ItemController {
     public Result getItem(@RequestParam("item_id")int item_id) throws ItemNotFoundException {
         return new Result<>(true,200,null,itemService.getItem(item_id));
     }
-    @RequestMapping(value="/getAll",method = RequestMethod.POST)
-    public Result getItem()  {
+    @RequestMapping(value="/findAll",method = RequestMethod.POST)
+    public Result findAll()  {
         return new Result<>(true,200,null,itemService.findAll());
     }
 }

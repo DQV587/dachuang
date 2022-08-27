@@ -1,4 +1,4 @@
-package com.dq.domain;
+package com.dq.domain.wx_login;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
-    private int user_id;
-    private String username;
+public class WeChatSession {
     private String openid;
-    private String password;
+    private String session_key;
+    private String errcode;
+    private String errmsg;
 }
