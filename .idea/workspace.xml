@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df355963-3289-4d66-b502-2d4d3effce7d" name="变更" comment="~">
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/controller/WxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/WxUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/wx_login/WeChatModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/wx_login/WeChatSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/controller/WxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/controller/WxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/domain/WxUser.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +39,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Users\DQ\tools\maven\maven_repo" />
-        <option name="mavenHome" value="$USER_HOME$/tools/maven/apache-maven-3.8.6" />
-        <option name="userSettingsFile" value="C:\Users\DQ\tools\maven\apache-maven-3.8.6\conf\settings.xml" />
+        <option name="localRepository" value="C:\Users\dq的电脑\.m2\repository" />
+        <option name="userSettingsFile" value="D:\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -52,42 +50,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/DQ/study/dachuang/src/main/resources/mapper",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "1ec9074acead1326e5068c4fb81cb221"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/大创/dachuang/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1ec9074acead1326e5068c4fb81cb221&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dq.domain" />
@@ -105,18 +103,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WxApplication">
-    <configuration name="ItemMapperTest.getItemsByOwnerID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dq.service.CarService" />
       <module name="dachuang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dq.mapper.*" />
+          <option name="PATTERN" value="com.dq.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dq.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.dq.mapper.ItemMapperTest" />
-      <option name="METHOD_NAME" value="getItemsByOwnerID" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,10 +180,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.WxApplication" />
+        <item itemvalue="应用程序.CarService" />
         <item itemvalue="JUnit.ItemMapperTest.insertItem" />
         <item itemvalue="JUnit.ManagerMapperTest.selectManager" />
         <item itemvalue="JUnit.UserMapperTest.insertUser" />
-        <item itemvalue="JUnit.ItemMapperTest.getItemsByOwnerID" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +210,10 @@
       <workItem from="1661172906018" duration="249000" />
       <workItem from="1661267270323" duration="2773000" />
       <workItem from="1661584823900" duration="10151000" />
+      <workItem from="1662188556149" duration="2104000" />
+      <workItem from="1662193506659" duration="8336000" />
+      <workItem from="1662872165724" duration="3523000" />
+      <workItem from="1662879084025" duration="648000" />
     </task>
     <task id="LOCAL-00001" summary="大致搭好了框架">
       <created>1661006951884</created>

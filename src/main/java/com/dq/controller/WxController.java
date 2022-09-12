@@ -1,7 +1,6 @@
 package com.dq.controller;
 
 import com.dq.domain.Result;
-import com.dq.domain.WxUser;
 import com.dq.domain.wx_login.WeChatModel;
 import com.dq.domain.wx_login.WeChatSession;
 import com.dq.service.UserService;

@@ -76,6 +76,21 @@
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.websocket</groupId>
+            <artifactId>javax.websocket-api</artifactId>
+            <version>1.1</version>
+            <scope>provided</scope>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.java-websocket</groupId>-->
+<!--            <artifactId>Java-Websocket</artifactId>-->
+<!--            <version>1.5.1</version>-->
+<!--        </dependency>-->
     </dependencies>
 <!--    <build>-->
 <!--        &lt;!&ndash; 添加资源 &ndash;&gt;-->

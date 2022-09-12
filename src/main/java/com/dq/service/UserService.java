@@ -1,7 +1,6 @@
 package com.dq.service;
 
 import com.dq.domain.User;
-import com.dq.domain.WxUser;
 import com.dq.exceptions.UserNotFoundException;
 import com.dq.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +18,7 @@ public class UserService {
         userMapper.insertUser(new User(0,username,null,password));
     }
 
-    public WxUser login(String openid) {
-        return null;
-    }
+//    public WxUser login(String openid) {
+//        return null;
+//    }
 }
