@@ -70,7 +70,7 @@ public class CarService {
     public static void main(String[] args){
         CarService car=new CarService();
         try{
-            car.sendMsg("5");
+            car.sendMsg("7");
         }catch (Exception e){
             System.out.println("fail");
         }
