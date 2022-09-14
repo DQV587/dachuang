@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df355963-3289-4d66-b502-2d4d3effce7d" name="变更" comment="与ESP8266的通信">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/controller/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/mapper/CarMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/util/CarUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +73,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "1ec9074acead1326e5068c4fb81cb221"
   },
   "keyToStringList": {
@@ -207,7 +212,9 @@
       <workItem from="1662188556149" duration="2104000" />
       <workItem from="1662193506659" duration="8336000" />
       <workItem from="1662872165724" duration="3523000" />
-      <workItem from="1662879084025" duration="17201000" />
+      <workItem from="1662879084025" duration="18263000" />
+      <workItem from="1663144198237" duration="913000" />
+      <workItem from="1663145726452" duration="4234000" />
     </task>
     <task id="LOCAL-00001" summary="大致搭好了框架">
       <created>1661006951884</created>
@@ -244,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662972487936</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="与ESP8266的通信">
+      <created>1663071366595</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663071366595</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,11 +312,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dq/service/CarService.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
