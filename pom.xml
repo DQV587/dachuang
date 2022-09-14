@@ -97,11 +97,11 @@
             <artifactId>httpclient</artifactId>
         </dependency>
 
-                <!--        <dependency>-->
-<!--            <groupId>org.java-websocket</groupId>-->
-<!--            <artifactId>Java-Websocket</artifactId>-->
-<!--            <version>1.5.1</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.java-websocket</groupId>
+            <artifactId>Java-Websocket</artifactId>
+            <version>1.5.1</version>
+        </dependency>
     </dependencies>
 <!--    <build>-->
 <!--        &lt;!&ndash; 添加资源 &ndash;&gt;-->
