@@ -25,7 +25,8 @@ public class ArmService {
             client.connectBlocking();
             //进入玩法
             if (client != null && client.isOpen()) {
-                client.send(JSONutils.absorb_data("/jetmax/end_effector/sucker/command", "false"));
+                //client.send(JSONutils.send("call_service","palletizing/enter"));
+                client.send(JSONutils.send_data("call_service", "palletizing/set_running","false"));
             }
         } catch (Exception e) {
             e.printStackTrace();
