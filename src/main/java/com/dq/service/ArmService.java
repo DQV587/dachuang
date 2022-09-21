@@ -25,10 +25,7 @@ public class ArmService {
             client.connectBlocking();
             //进入玩法
             if (client != null && client.isOpen()) {
-//                client.send(JSONutils.send("call_service", "remote_control/enter"));
-                for (int i=0;i<100;i++){
-                    client.send(JSONutils.arm_move_data("/jetmax/relative_command", 0, 5, 0, normalSpeed));
-                }
+                client.send(JSONutils.absorb_data("/jetmax/end_effector/sucker/command", "false"));
             }
         } catch (Exception e) {
             e.printStackTrace();

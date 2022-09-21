@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df355963-3289-4d66-b502-2d4d3effce7d" name="变更" comment="小车相关代码">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/JWebSocketClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/util/JSONutils.java" afterDir="false" />
+    <list default="true" id="df355963-3289-4d66-b502-2d4d3effce7d" name="变更" comment="把机械臂相关的复制进来了">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/ROSBridgeClient/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/ROSBridgeClient/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/ROSBridgeClient/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/ROSBridgeClient/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/ROSBridgeClient/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dq/domain/ROSBridgeClient/ROSBridgeClient.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/service/ArmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/service/ArmService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dq/util/CarUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dq/util/CarUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,42 +52,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/大创/dachuang/src/main/java/com/dq/domain",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "1ec9074acead1326e5068c4fb81cb221"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/大创/dachuang/src/main/java/com/dq/domain&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1ec9074acead1326e5068c4fb81cb221&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dq.domain" />
@@ -101,7 +108,20 @@
       <recent name="com.dq.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.CarService">
+  <component name="RunManager" selected="应用程序.ArmService">
+    <configuration name="ArmService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dq.service.ArmService" />
+      <module name="dachuang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dq.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CarService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dq.service.CarService" />
       <module name="dachuang" />
@@ -147,22 +167,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.insertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dachuang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dq.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dq.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.dq.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="insertUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WxApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dachuang" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dq.WxApplication" />
@@ -178,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ArmService" />
         <item itemvalue="应用程序.CarService" />
         <item itemvalue="Spring Boot.WxApplication" />
         <item itemvalue="JUnit.ItemMapperTest.insertItem" />
         <item itemvalue="JUnit.ManagerMapperTest.selectManager" />
-        <item itemvalue="JUnit.UserMapperTest.insertUser" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +219,9 @@
       <workItem from="1662879084025" duration="18263000" />
       <workItem from="1663144198237" duration="913000" />
       <workItem from="1663145726452" duration="4291000" />
-      <workItem from="1663169360421" duration="315000" />
+      <workItem from="1663169360421" duration="2210000" />
+      <workItem from="1663176719234" duration="2738000" />
+      <workItem from="1663407978255" duration="24066000" />
     </task>
     <task id="LOCAL-00001" summary="大致搭好了框架">
       <created>1661006951884</created>
@@ -266,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663150291663</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="把机械臂相关的复制进来了">
+      <created>1663169964623</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663169964623</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +303,8 @@
     <MESSAGE value="小车" />
     <MESSAGE value="与ESP8266的通信" />
     <MESSAGE value="小车相关代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="小车相关代码" />
+    <MESSAGE value="把机械臂相关的复制进来了" />
+    <option name="LAST_COMMIT_MESSAGE" value="把机械臂相关的复制进来了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -322,6 +336,10 @@
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -42,8 +42,6 @@ public class CarUtil {
                 .setScheme("http")
                 .setHost(car.getIp_address())
                 .setPath("/Move")
-                .addParameter("curX",Integer.toString(car.getPositionX()))
-                .addParameter("curY",Integer.toString(car.getPositionY()))
                 .addParameter("desX",Integer.toString(positionX))
                 .addParameter("desY",Integer.toString(positionY))
                 .build();
