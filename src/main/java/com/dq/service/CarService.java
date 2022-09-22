@@ -23,7 +23,23 @@ public class CarService {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        car.setStatus(true);
         return car;
+    }
+    public Car findCarById(int car_id){
+        return carMapper.findById(car_id);
+    }
+    public void closeCar(Car car){
+        if(car.isStatus()){
+            carMapper.changeStatus(car.getCar_id(), false);
+            try {
+                CarUtil.inactivateCar(car);
+            } catch (URISyntaxException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
     public void moveTo(Car car, int positionX, int positionY){
         try {
@@ -36,23 +52,16 @@ public class CarService {
     }
 
     public static void main(String[] args){
-        Car car1=new Car(1,0,0,"192.168.43.148",false);
-        try {
-            CarUtil.activateCar(car1);
-            CarUtil.moveCar(car1,2,1);
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        Car car;
+//        Car car1=new Car(1,0,0,"192.168.43.148",false);
 //        try {
 //            CarUtil.activateCar(car1);
+//            CarUtil.moveCar(car1,2,1);
 //        } catch (URISyntaxException e) {
 //            throw new RuntimeException(e);
 //        } catch (IOException e) {
 //            throw new RuntimeException(e);
 //        }
-
     }
 }
 

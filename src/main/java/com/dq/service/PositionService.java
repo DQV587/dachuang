@@ -13,7 +13,7 @@ public class PositionService {
     public Position findAvailable(){
         return positionMapper.findAvailablePosition();
     }
-
+    public Position findById(int position_id){return positionMapper.findById(position_id);}
     public void reverseStatus(int position_id){
         Position target=positionMapper.findById(position_id);
         if(target.isHas_good()){

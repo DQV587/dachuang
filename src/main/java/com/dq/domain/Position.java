@@ -10,4 +10,6 @@ import lombok.NoArgsConstructor;
 public class Position {
     private int position_id;
     private boolean has_good;
+    private int X;
+    private int Y;
 }
