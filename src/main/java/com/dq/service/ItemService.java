@@ -33,22 +33,19 @@ public class ItemService {
         return itemMapper.getItemsByOwnerID(owner_id);
     }
     public Item findById(int item_id){
-        Item target=itemMapper.getItemByID(item_id);
-        return target;
+        return itemMapper.getItemByID(item_id);
     }
     public void getItem(Item target)  {
         //取东西 发送指令
         Car car=carService.findCar();
+        Position position=positionService.findById(target.getPosition());
         try {
-            CarUtil.activateCar(car);
-            Position position=positionService.findById(target.getPosition());
-            CarUtil.moveCar(car,position.getX(), position.getY());
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+            carService.moveTo(car, position.getX(), position.getY());
+        } catch (URISyntaxException | IOException e) {
             throw new RuntimeException(e);
         }
         itemMapper.getItem(target.getGood_id());
         positionService.reverseStatus(target.getPosition());
     }
+
 }

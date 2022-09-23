@@ -19,11 +19,13 @@ import java.net.URISyntaxException;
 public class CarController {
     @Autowired
     private CarService carService;
-    private ArmService armService=new ArmService("192.168.149.1");
+    private ArmService armService=new ArmService("192.168.43.54");
     @RequestMapping(value = "/recMsg",method = RequestMethod.GET)
     public Result arriveTarget(@RequestParam("car_id")int car_id,@RequestParam("curX")int curX,
                              @RequestParam("curY")int curY,@RequestParam("status")String status){
         System.out.println("id:"+car_id+"curX:"+curX+"curY:"+curY+"status:"+status);
+        Car car=carService.findCarById(car_id);
+        carService.updatePosition(car,curX,curY);
         boolean Status= status.equals("true");
         if(Status){
             armService.grab();
@@ -37,9 +39,8 @@ public class CarController {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            Car car=carService.findCarById(car_id);
             try {
-                CarUtil.moveCar(car,0,0);
+                carService.moveTo(car,2,0);
             } catch (URISyntaxException | IOException e) {
                 throw new RuntimeException(e);
             }
@@ -56,9 +57,8 @@ public class CarController {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            Car car=carService.findCarById(car_id);
             try {
-                CarUtil.inactivateCar(car);
+                carService.closeCar(car);
             } catch (URISyntaxException | IOException e) {
                 throw new RuntimeException(e);
             }

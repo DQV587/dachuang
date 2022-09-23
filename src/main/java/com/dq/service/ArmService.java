@@ -63,14 +63,14 @@ public class ArmService {
         }
     }
     public static void main(String[] args) {
-        ArmService armService=new ArmService("192.168.149.1");
-        armService.grab();
-
-        try {
-            Thread.sleep(12000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        ArmService armService=new ArmService("192.168.43.54");
+//        armService.grab();
+//
+//        try {
+//            Thread.sleep(12000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         armService.release();
         try {
             armService.close();

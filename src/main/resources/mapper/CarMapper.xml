@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.dq.mapper.CarMapper">
     <update id="updatePosition">
-        update car set positionX=#{positon_X},positionY=#{positionY} where car_id=#{car_id}
+        update car set positionX=#{positionX},positionY=#{positionY} where car_id=#{car_id}
     </update>
     <update id="changeStatus">
         update car set status=#{status} where car_id=#{car_id}
