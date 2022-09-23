@@ -27,7 +27,7 @@ public class CarUtil {
             response = httpclient.execute(httpGet);
             // 判断返回状态是否为200
             if (response.getStatusLine().getStatusCode() == 200) {
-                System.out.println("success");
+                System.out.println("activate_success");
             }
         } finally {
             if (response != null) {
@@ -53,7 +53,7 @@ public class CarUtil {
             response = httpclient.execute(httpGet);
             // 判断返回状态是否为200
             if (response.getStatusLine().getStatusCode() == 200) {
-                System.out.println("success");
+                System.out.println("arrive_success");
             }
         } finally {
             if (response != null) {
@@ -77,7 +77,7 @@ public class CarUtil {
             response = httpclient.execute(httpGet);
             // 判断返回状态是否为200
             if (response.getStatusLine().getStatusCode() == 200) {
-                System.out.println("success");
+                System.out.println("shutdown_success");
             }
         } finally {
             if (response != null) {

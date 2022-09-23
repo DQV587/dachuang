@@ -27,7 +27,7 @@ public class ArmService {
         };
     }
     public void close() throws InterruptedException {
-        this.client.closeBlocking();
+        this.client.close();
     }
     public void grab(){
         try {
@@ -64,15 +64,17 @@ public class ArmService {
     }
     public static void main(String[] args) {
         ArmService armService=new ArmService("192.168.43.54");
-//        armService.grab();
-//
-//        try {
-//            Thread.sleep(12000);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
+        armService.grab();
+
+        try {
+            Thread.sleep(12000);
+            armService.close();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         armService.release();
         try {
+            Thread.sleep(5000);
             armService.close();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

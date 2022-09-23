@@ -45,10 +45,8 @@ public class CarService {
         Car car1=new Car(1,0,0,"192.168.43.148",false);
         try {
             CarUtil.activateCar(car1);
-            CarUtil.moveCar(car1,2,1);
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+            //CarUtil.moveCar(car1,0,0);
+        } catch (URISyntaxException | IOException e) {
             throw new RuntimeException(e);
         }
     }

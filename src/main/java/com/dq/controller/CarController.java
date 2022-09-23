@@ -19,36 +19,45 @@ import java.net.URISyntaxException;
 public class CarController {
     @Autowired
     private CarService carService;
-    private ArmService armService=new ArmService("192.168.43.54");
     @RequestMapping(value = "/recMsg",method = RequestMethod.GET)
     public Result arriveTarget(@RequestParam("car_id")int car_id,@RequestParam("curX")int curX,
                              @RequestParam("curY")int curY,@RequestParam("status")String status){
         System.out.println("id:"+car_id+"curX:"+curX+"curY:"+curY+"status:"+status);
         Car car=carService.findCarById(car_id);
         carService.updatePosition(car,curX,curY);
+        ArmService armService=new ArmService("192.168.43.54");
         boolean Status= status.equals("true");
         if(Status){
-            armService.grab();
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+            if(curX==0&&curY==0){
+                try {
+                    carService.closeCar(car);
+                } catch (URISyntaxException | IOException e) {
+                    throw new RuntimeException(e);
+                }
             }
-            try {
-                armService.close();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            try {
-                carService.moveTo(car,2,0);
-            } catch (URISyntaxException | IOException e) {
-                throw new RuntimeException(e);
+            else{
+                armService.grab();
+                try {
+                    Thread.sleep(10000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                try {
+                    armService.close();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                try {
+                    carService.moveTo(car,2,0);
+                } catch (URISyntaxException | IOException e) {
+                    throw new RuntimeException(e);
+                }
             }
         }
         else {
             armService.release();
             try {
-                Thread.sleep(3000);
+                Thread.sleep(5000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -58,7 +67,7 @@ public class CarController {
                 throw new RuntimeException(e);
             }
             try {
-                carService.closeCar(car);
+                carService.moveTo(car,0,0);
             } catch (URISyntaxException | IOException e) {
                 throw new RuntimeException(e);
             }
